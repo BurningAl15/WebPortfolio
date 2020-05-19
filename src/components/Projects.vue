@@ -21,51 +21,46 @@ export default {
       pages: [
         {
           id: 0,
-          icon: "CamachosResort.png",
+          icon: "https://i.imgur.com/5ATWUDj.jpg",
           alt: "Camacho's Resort",
           url: "https://burningal15.github.io/landing-page-resort/",
-          description:
-            "Play in a incredible kitten world and unlock all the kittens!"
+          description: "Web Page made with simple HTML, CSS"
         },
         {
           id: 1,
-          icon: "FatCatGameStudio.png",
-          alt: "Camacho's Resort",
-          url: "https://burningal15.github.io/landing-page-resort/",
+          icon: "https://i.imgur.com/9Z6O8J3.png",
+          alt: "Fat Cat Game Studio",
+          url: "https://burningal15.github.io/FatCatGameStudioWebPage/#/",
           description:
-            "Survive in the space until you can found someone to help you!"
+            "Web Page made with Vue.JS and a really simple backend that calls data from a json in heroku"
         },
         {
           id: 2,
-          icon: "SaborAPeru.png",
-          alt: "Camacho's Resort",
-          url: "https://burningal15.github.io/landing-page-resort/",
-          description:
-            "Play in a incredible kitten world and unlock all the kittens!"
+          icon: "https://i.imgur.com/By6mTMS.jpg",
+          alt: "Sabor a Perú",
+          url: "https://burningal15.github.io/sabor_a_peru/",
+          description: "Web Page made with simple HTML, CSS and bootstrap"
         },
         {
           id: 3,
-          icon: "Tulum.png",
-          alt: "Camacho's Resort",
-          url: "https://burningal15.github.io/landing-page-resort/",
-          description:
-            "Survive in the space until you can found someone to help you!"
+          icon: "https://i.imgur.com/nynUaHM.jpg",
+          alt: "Visit Tulúm",
+          url: "http://fundajs-aldhairvera.surge.sh/",
+          description: "Web Page made with simple HTML, CSS and Javascript"
         },
         {
           id: 4,
-          icon: "CoffeeNCake.png",
-          alt: "Camacho's Resort",
-          url: "https://burningal15.github.io/landing-page-resort/",
-          description:
-            "Play in a incredible kitten world and unlock all the kittens!"
+          icon: "https://i.imgur.com/9ZiQuQc.jpg",
+          alt: "Coffee and Cake",
+          url: "https://burningal15.github.io/CakeNCoffee-JS/",
+          description: "Web Page made with simple HTML, CSS and Javascript"
         },
         {
           id: 5,
-          icon: "Main.png",
-          alt: "Camacho's Resort",
-          url: "https://burningal15.github.io/landing-page-resort/",
-          description:
-            "Survive in the space until you can found someone to help you!"
+          icon: "https://i.imgur.com/0oigOYw.png",
+          alt: "Healthy Recipees",
+          url: "https://burningal15.github.io/RecipeApp/",
+          description: "Web Page made with React.JS"
         }
       ]
     };

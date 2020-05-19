@@ -4,18 +4,31 @@
       <a class="logo" href="#">
         <img :src="require('../assets/AldhairVeraIconNoBG.png')" alt />
       </a>
-      <b-nav align="center">
-        <b-nav-item active>Inicio</b-nav-item>
-        <b-nav-item>Proyectos</b-nav-item>
-        <b-nav-item>Sobre mí</b-nav-item>
-        <b-nav-item>Contacto</b-nav-item>
-      </b-nav>
+
+      <ul class="nav justify-content-center">
+        <div class="nav-item">
+          <a href="#" class="nav-link" v-smooth-scroll>Inicio</a>
+        </div>
+        <div class="nav-item">
+          <a href="#Proyectos" class="nav-link" v-smooth-scroll>Proyectos</a>
+        </div>
+        <div class="nav-item">
+          <a href="#SobreMi" class="nav-link" v-smooth-scroll>Sobre mí</a>
+        </div>
+        <div class="nav-item">
+          <a href="#Contacto" class="nav-link" v-smooth-scroll>Contacto</a>
+        </div>
+      </ul>
       <div class="redes">
         <a href="https://github.com/BurningAl15" target="_blank">
           <i class="fab fa-codepen"></i>
         </a>
         <a href="https://codepen.io/burningal15" target="_blank">
           <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://aldhairvera.studio" target="_blank">
+          <i class="far fa-user-circle"></i>
         </a>
       </div>
     </div>
@@ -68,7 +81,7 @@ export default {};
     }
   }
   .redes {
-    width: 5%;
+    width: 10%;
     display: flex;
     margin-right: 1%;
     flex-direction: row;
