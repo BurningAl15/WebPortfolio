@@ -5,7 +5,7 @@ import {
   faGithub,
   faCodepen,
   faJs,
-  faVuejs,
+  faVuejs
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 

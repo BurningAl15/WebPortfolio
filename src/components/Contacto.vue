@@ -4,35 +4,81 @@
       <div class="container">
         <div class="contenedor-formulario">
           <div class="formulario">
-            <h2>Cuéntame sobre tu proyecto</h2>
-            <p>Es increíble conocer gente que comparte sus ideas o sus deseos de crear cosas así que contactame sin miedo.</p>
-            <b-form @submit="onSubmit" @reset="onReset">
-              <b-form-group id="input-group-2" label="Tú nombre:" label-for="input-2">
-                <b-form-input
-                  id="input-2"
-                  v-model="form.name"
-                  required
-                  placeholder="Aldhair Vera Camacho"
-                ></b-form-input>
-              </b-form-group>
+            <h2>Tell me about your project!</h2>
+            <p>
+              It's incredible to know people who shares their ideas or wishes to
+              create some things, so contact me, i'll be glad to talk.
+            </p>
+            <!-- Default form contact -->
+            <form name="contact" method="POST" data-netlify="true">
+              <!-- Default input name -->
+              <span>
+                <i class="fas prefix fa-user"></i>
+                <label for="defaultFormContactNameEx" class="grey-text">Your name</label>
+              </span>
 
-              <b-form-group
-                id="input-group-1"
-                label="Tú email:"
-                label-for="input-1"
-                description="No voy a compartir tu correo con nadie"
-              >
-                <b-form-input
-                  id="input-1"
-                  v-model="form.email"
-                  type="email"
-                  required
-                  placeholder="aldhair@aldhair.com"
-                ></b-form-input>
-              </b-form-group>
+              <input
+                type="text"
+                name="name"
+                id="defaultFormContactNameEx"
+                class="form-control"
+                placeholder="Aldhair Vera Camacho"
+              />
 
-              <b-button class="boton" ype="submit" variant="primary">Envíar</b-button>
-            </b-form>
+              <br />
+
+              <!-- Default input email -->
+
+              <span>
+                <i class="fas prefix fa-envelope"></i>
+                <label for="defaultFormContactEmailEx" class="grey-text">Your email</label>
+              </span>
+              <input
+                type="email"
+                name="email"
+                id="defaultFormContactEmailEx"
+                class="form-control"
+                placeholder="aldhair@aldhair.com"
+              />
+
+              <br />
+
+              <!-- Default input subject -->
+              <span>
+                <i class="fas prefix fa-tag"></i>
+                <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+              </span>
+              <input
+                type="text"
+                name="subject"
+                id="defaultFormContactSubjectEx"
+                class="form-control"
+                placeholder="Cool message"
+              />
+
+              <br />
+
+              <!-- Default textarea message -->
+              <span>
+                <i class="fas fa-comment-dots"></i>
+                <label for="defaultFormContactMessageEx" class="grey-text">Your message</label>
+              </span>
+              <textarea
+                type="text"
+                name="message"
+                id="defaultFormContactMessageEx"
+                class="form-control"
+                rows="3"
+              ></textarea>
+
+              <div class="text-center mt-4">
+                <button class="btn btn-outline-warning" type="submit">
+                  Send
+                  <i class="far fa-paper-plane ml-2"></i>
+                </button>
+              </div>
+            </form>
+            <!-- Default form contact -->
           </div>
           <div class="foto"></div>
         </div>
@@ -42,27 +88,13 @@
 </template>
 
 <script>
+// import { mdbInput, mdbBtn, mdbTextarea } from "mdbvue";
 export default {
-  data() {
-    return {
-      form: {
-        email: "",
-        name: ""
-      }
-    };
-  },
-  methods: {
-    onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
-    },
-    onReset(evt) {
-      evt.preventDefault();
-      // Reset our form values
-      this.form.email = "";
-      this.form.name = "";
-      // Trick to reset/clear native browser form validation state
-    }
+  name: "Basic",
+  components: {
+    // mdbInput,
+    // mdbBtn,
+    // mdbTextarea
   }
 };
 </script>
@@ -71,13 +103,14 @@ export default {
 .contacto {
   width: 100%;
   position: relative;
-  .jumbotron {
-    //
 
+  .jumbotron {
     background-image: url(../assets/body/jumbotron.jpg);
-    padding: 190px 0;
+    padding: 160px 0;
+    margin: 0px;
+
     .contenedor-formulario {
-      background: #fff;
+      background: rgba(0, 0, 0, 0.596);
       min-height: 485px;
       border-radius: 3px;
       box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.3);
@@ -85,7 +118,9 @@ export default {
       justify-content: space-between;
       .formulario {
         width: 50%;
-        padding: 70px;
+
+        padding: 30px;
+
         h2 {
           font-size: 1.375rem;
           line-height: 24px;
@@ -94,10 +129,35 @@ export default {
           margin-bottom: 10px;
         }
         p {
-          color: #979797;
+          // color: #979797;
+          color: #dfdfdf;
+
           font-size: 1rem;
           font-weight: 400;
           margin-bottom: 30px;
+        }
+
+        form {
+          color: #dfdfdf;
+
+          i {
+            margin-right: 10px;
+          }
+
+          label {
+            margin-right: 0 !important;
+            // font-size: 1.25rem !important;
+          }
+
+          .btn-outline-warning {
+            color: var(--purple);
+            border-color: var(--purple);
+          }
+
+          .btn-outline-warning:hover {
+            color: #dfdfdf;
+            background: var(--purple);
+          }
         }
       }
     }

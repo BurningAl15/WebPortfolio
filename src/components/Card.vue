@@ -1,9 +1,13 @@
 <template>
   <article class="card-element card mb-4">
-    <img :src="`${currentGame.icon}`" :alt="`${currentGame.alt}`" class="card-img-top" />
+    <img
+      :src="`${currentGame.icon}`"
+      :alt="`${currentGame.alt}`"
+      class="card-img-top"
+    />
     <div class="card-body">
-      <h4 class="card-title">{{currentGame.alt}}</h4>
-      <p class="card-text">{{currentGame.description}}</p>
+      <h4 class="card-title">{{ currentGame.alt }}</h4>
+      <p class="card-text">{{ currentGame.description }}</p>
 
       <a
         role="button"
@@ -11,7 +15,8 @@
         :href="`${currentGame.url}`"
         target="_blank"
         class="btn btn-primary"
-      >Check Me</a>
+        >Check Me</a
+      >
     </div>
   </article>
 </template>

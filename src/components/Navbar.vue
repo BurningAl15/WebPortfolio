@@ -7,16 +7,16 @@
 
       <ul class="nav justify-content-center">
         <div class="nav-item">
-          <a href="#" class="nav-link" v-smooth-scroll>Inicio</a>
+          <a href="#" class="nav-link" v-smooth-scroll>Home</a>
         </div>
         <div class="nav-item">
-          <a href="#Proyectos" class="nav-link" v-smooth-scroll>Proyectos</a>
+          <a href="#Proyectos" class="nav-link" v-smooth-scroll>Projects</a>
         </div>
         <div class="nav-item">
-          <a href="#SobreMi" class="nav-link" v-smooth-scroll>Sobre mí</a>
+          <a href="#SobreMi" class="nav-link" v-smooth-scroll>About Me</a>
         </div>
         <div class="nav-item">
-          <a href="#Contacto" class="nav-link" v-smooth-scroll>Contacto</a>
+          <a href="#Contacto" class="nav-link" v-smooth-scroll>Contact me</a>
         </div>
       </ul>
       <div class="redes">

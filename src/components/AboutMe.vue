@@ -11,8 +11,8 @@
             <i class="fas fa-user-graduate"></i>
           </div>
           <div class="texto-info-base">
-            <h4>Estudiante de Computer Science</h4>
-            <p>En Universidad Peruana de Ciencias Aplicadas</p>
+            <h4>Computer Science Student</h4>
+            <p>At Universidad Peruana de Ciencias Aplicadas</p>
           </div>
         </div>
         <div class="contenido-info">
@@ -25,7 +25,7 @@
             target="_blank"
           >
             <div class="texto-info">
-              <h4>Programa de preparación Front-End</h4>
+              <h4>Front-End program</h4>
               <p>Facebook Developer Circle y Platzi</p>
             </div>
           </a>
@@ -42,8 +42,11 @@
             <i class="fas fa-code"></i>
           </div>
           <div class="texto-info-base">
-            <h4>Experiencia con trabajo en equipo</h4>
-            <p>He sido parte de equipos multidisciplinarios y he dirigido también.</p>
+            <h4>Experience working on multidisciplinary teams</h4>
+            <p>
+              I worked in some multidisciplinary teams and led some others, game
+              development teams specially.
+            </p>
           </div>
         </div>
         <div class="contenido-info">
@@ -52,8 +55,8 @@
           </div>
           <a class="link" href="https://aldhairvera.studio" target="_blank">
             <div class="texto-info">
-              <h4>Game Developer autodidacta</h4>
-              <p>3 años de experiencia programando y diseñando</p>
+              <h4>Self-Taught Game Developer</h4>
+              <p>More than 3 years programming and designing videogames.</p>
             </div>
           </a>
         </div>

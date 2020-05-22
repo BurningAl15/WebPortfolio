@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="copy">
-      <p>Todos los derechos reservados</p>
+      <p>All rights reserved 2020.</p>
     </div>
     <div class="container">
       <div class="footer-redes">

@@ -1,8 +1,11 @@
 <template>
   <section class="projects">
     <div class="titulo-seccion">
-      <h2>Últimos Proyectos Web</h2>
-      <p>Somos especialistas en entregar los mejores trabajos y la más alta calidad</p>
+      <h2>Latest Web Projects</h2>
+      <p>
+        I specialize in delivering the incredible web pages of the highest
+        quality.
+      </p>
     </div>
     <div class="container-fluid">
       <Card v-for="page in pages" :key="page.id" :game="page" />
