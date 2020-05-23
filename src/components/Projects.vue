@@ -111,7 +111,7 @@ export default {
   }
 }
 
-@media (max-width: 1035px) {
+@media (max-width: 1150px) {
   .container-fluid {
     .card-element {
       max-width: 100% !important;
