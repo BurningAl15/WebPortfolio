@@ -178,13 +178,13 @@ export default {
           }
 
           .btn-outline-warning {
-            color: var(--purple);
-            border-color: var(--purple);
+            color: var(--white);
+            border-color: var(--white);
           }
 
           .btn-outline-warning:hover {
-            color: #dfdfdf;
-            background: var(--purple);
+            color: var(--purple);
+            background: var(--white);
           }
         }
       }

@@ -112,11 +112,9 @@ export default {
 }
 
 @media (max-width: 1035px) {
-  .projects {
-    .container-fluid {
-      .card-element {
-        max-width: 100% !important;
-      }
+  .container-fluid {
+    .card-element {
+      max-width: 100% !important;
     }
   }
 }
