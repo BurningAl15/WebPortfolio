@@ -23,6 +23,7 @@
                 id="defaultFormContactNameEx"
                 class="form-control"
                 placeholder="Aldhair Vera Camacho"
+                v-model="name"
               />
 
               <br />
@@ -39,6 +40,7 @@
                 id="defaultFormContactEmailEx"
                 class="form-control"
                 placeholder="aldhair@aldhair.com"
+                v-model="email"
               />
 
               <br />
@@ -54,6 +56,7 @@
                 id="defaultFormContactSubjectEx"
                 class="form-control"
                 placeholder="Cool message"
+                v-model="subject"
               />
 
               <br />
@@ -69,6 +72,7 @@
                 id="defaultFormContactMessageEx"
                 class="form-control"
                 rows="3"
+                v-model="message"
               ></textarea>
 
               <div class="text-center mt-4">
@@ -88,18 +92,25 @@
 </template>
 
 <script>
-// import { mdbInput, mdbBtn, mdbTextarea } from "mdbvue";
 let emailjs = require("emailjs-com");
 // import emailjs from 'emailjs-com';
 
 export default {
   name: "Basic",
+  data() {
+    return {
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    };
+  },
   methods: {
     sendEmail: e => {
       emailjs
         .sendForm(
           "gmail",
-          "template_4gPAxasr",
+          "template_4gPAxasr_clone",
           e.target,
           "user_AkoqA7VBu4uVHrRTNQThf"
         )
