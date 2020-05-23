@@ -74,6 +74,7 @@ export default {};
   background: #191919;
   padding: 50px 0;
   color: white;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -256,6 +257,13 @@ export default {};
       background-image: url(https://i.imgur.com/PIPRuiH.jpg?1);
       background-position: center;
       background-size: cover;
+    }
+  }
+
+  .titulo-seccion {
+    h2 {
+      font-size: 3.125rem;
+      margin-bottom: 3rem;
     }
   }
 }
