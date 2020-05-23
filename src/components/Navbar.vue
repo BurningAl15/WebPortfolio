@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="navbar">
-      <a class="logo" href="#">
+      <a class="logo" href="https://aldhairvera.studio" target="_blank">
         <img :src="require('../assets/AldhairVeraIconNoBG.png')" alt />
       </a>
 
@@ -13,7 +13,7 @@
           <a href="#Proyectos" class="nav-link" v-smooth-scroll>Projects</a>
         </div>
         <div class="nav-item">
-          <a href="#SobreMi" class="nav-link" v-smooth-scroll>About Me</a>
+          <a href="#SobreMi" class="nav-link" v-smooth-scroll>About me</a>
         </div>
         <div class="nav-item">
           <a href="#Contacto" class="nav-link" v-smooth-scroll>Contact me</a>

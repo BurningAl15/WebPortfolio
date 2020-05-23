@@ -40,4 +40,14 @@ export default {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.btn-primary {
+  border-color: var(--purple) !important;
+  color: var(--purple) !important;
+  background-color: transparent !important;
+}
+.btn-primary:hover {
+  background: var(--purple) !important;
+  color: white !important;
+}
 </style>

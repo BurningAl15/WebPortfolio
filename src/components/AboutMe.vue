@@ -1,7 +1,7 @@
 <template>
   <section class="about-me">
     <div class="titulo-seccion">
-      <h2>Sobre mí</h2>
+      <h2>About Me</h2>
       <!-- <p></p> -->
     </div>
     <div class="container">
@@ -166,7 +166,7 @@ export default {};
 
       height: 300px;
       box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
-      background-image: url(http://fatcatstudio_aldhairvera.surge.sh/css/../img/info-foto.jpg);
+      background-image: url(https://i.imgur.com/qJCTnZ2.jpg?2);
       background-position: center;
       background-size: cover;
     }
@@ -253,7 +253,7 @@ export default {};
 
       height: 300px;
       box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
-      background-image: url(http://fatcatstudio_aldhairvera.surge.sh/css/../img/info-foto.jpg);
+      background-image: url(https://i.imgur.com/PIPRuiH.jpg?1);
       background-position: center;
       background-size: cover;
     }

@@ -1,5 +1,5 @@
 <template>
-  <article class="card-element card mb-4">
+  <article class="card-element card my-4">
     <img
       :src="`${currentGame.icon}`"
       :alt="`${currentGame.alt}`"

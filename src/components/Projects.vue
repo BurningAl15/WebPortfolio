@@ -64,6 +64,13 @@ export default {
           alt: "Healthy Recipees",
           url: "https://burningal15.github.io/RecipeApp/",
           description: "Web Page made with React.JS"
+        },
+        {
+          id: 6,
+          icon: "https://i.imgur.com/oEMHjyZ.png",
+          alt: "Portfolio for programmer",
+          url: "https://gatsby-aldhairvera-programmerportfolio.netlify.app",
+          description: "Web Page made with Gatsby, GraphQL and React.JS"
         }
       ]
     };
@@ -72,30 +79,45 @@ export default {
 </script>
 
 <style lang="scss">
-.titulo-seccion {
-  text-align: center;
-  margin-bottom: 40px;
-  h2 {
-    // color: var(--var-color);
-    font-size: 3.125rem;
-    margin-bottom: 15px;
-    font-weight: 500;
+.projects {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+    h2 {
+      // color: var(--var-color);
+      font-size: 3.125rem;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    p {
+      color: #979797;
+      font-size: 1rem;
+      font-weight: 400;
+    }
   }
-  p {
-    color: #979797;
-    font-size: 1rem;
-    font-weight: 400;
+
+  .container-fluid {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-.container-fluid {
-  width: 90%;
-  max-width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 1035px) {
+  .projects {
+    .container-fluid {
+      .card-element {
+        max-width: 100% !important;
+      }
+    }
+  }
 }
 </style>
