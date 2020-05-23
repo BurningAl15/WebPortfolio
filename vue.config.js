@@ -1,4 +1,8 @@
 // vue.config.js
 module.exports = {
-  publicPath: "/WebPortfolio/"
+  publicPath: "/WebPortfolio/",
+  productionSourceMap: false,
+  assetsDir: "../static",
+  outputDir: "../static",
+  indexPath: "../templates/index.html"
 };
