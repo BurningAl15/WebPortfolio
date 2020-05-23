@@ -10,7 +10,7 @@
               create some things, so contact me, i'll be glad to talk.
             </p>
             <!-- Default form contact -->
-            <form name="contact" method="POST" data-netlify="true">
+            <form @submit.prevent="sendEmail" name="contact" method="POST">
               <!-- Default input name -->
               <span>
                 <i class="fas prefix fa-user"></i>
@@ -89,12 +89,29 @@
 
 <script>
 // import { mdbInput, mdbBtn, mdbTextarea } from "mdbvue";
+let emailjs = require("emailjs-com");
+// import emailjs from 'emailjs-com';
+
 export default {
   name: "Basic",
-  components: {
-    // mdbInput,
-    // mdbBtn,
-    // mdbTextarea
+  methods: {
+    sendEmail: e => {
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_4gPAxasr",
+          e.target,
+          "user_AkoqA7VBu4uVHrRTNQThf"
+        )
+        .then(
+          result => {
+            console.log("SUCCESS!", result.status, result.text);
+          },
+          error => {
+            console.log("FAILED...", error);
+          }
+        );
+    }
   }
 };
 </script>

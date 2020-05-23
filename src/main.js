@@ -5,6 +5,8 @@ import router from "./router";
 import store from "./store";
 import "./plugins/bootstrap-vue.js";
 import * as mdbvue from "mdbvue";
+
+
 for (const component in mdbvue) {
   Vue.component(component, mdbvue[component]);
 }
